@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seu Gato</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Olá {{ nome }} 🐾</h1>
+        <p>Esse é seu gato aleatório:</p>
+
+        <img src="{{ cat_image_url }}" alt="Imagem de um gato">
+
+        <a href="/">⬅ Voltar</a>
+    </div>
+</body>
+</html>
